@@ -16,3 +16,4 @@ DB – PostgreSQL 14
   username: postgres
   password: qwerty
 Для получения JSON со всеми читающими клиентами, что они взяли и когда, перейдите на страницу: http://localhost:8080/JSON
+Для запуска приложения воспользуйтесь файлом library-0.0.1-SNAPSHOT.jar
