@@ -1,0 +1,31 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Библиотека</title>
+</head>
+<body>
+<h1><a href="/">Библиотека</a></h1><hr>
+<h2>Каталог книг</h2><hr>
+<h3><a href="/new_book">Добавить книгу</a></h3>
+
+<table border="1" cellpadding="5">
+    <tr>
+        <th>Наименовение</th>
+        <th>Автор</th>
+        <th>ISBN</th>
+        <th>Действие</th>
+    </tr>
+    <tr th:each ="book : ${books}">
+        <td th:utext="${book.name}">...</td>
+        <td th:utext="${book.author}">...</td>
+        <td th:utext="${book.isbn}">...</td>
+        <td>
+            <a href="edit_book.html" th:href="@{/edit_book(bookId=${book.id})}">Изменить</a>
+
+            <a href="catalog.html" th:href="@{/delete_book(bookId=${book.id})}">Удалить</a>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
+

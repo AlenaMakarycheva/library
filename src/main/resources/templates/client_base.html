@@ -1,0 +1,29 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Библиотека</title>
+</head>
+<body>
+<h1><a href="/">Библиотека</a></h1><hr>
+<h2>Клиенты</h2><hr>
+
+<h3><a href="/new_client">Добавить клиента</a></h3>
+
+<table border="1" cellpadding="5">
+    <tr>
+        <th>ФИО</th>
+        <th>Дата рождения</th>
+        <th>Действие</th>
+    </tr>
+    <tr th:each ="client : ${clients}">
+        <td th:utext="${client.lastName}+' '+${client.firstName}+' '+${client.patronymic}">...</td>
+        <td th:utext="${client.birthday}">...</td>
+        <td>
+            <a href="edit_client.html" th:href="@{/edit_client(clientId=${client.id})}">Изменить</a>
+
+            <a href="delete_client.html" th:href="@{/delete_client(clientId=${client.id})}">Удалить</a>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

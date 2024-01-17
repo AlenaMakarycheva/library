@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: library
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+  thymeleaf:
+    enabled: true
+    content-type: text/html
+    check-template-location: true
+    cache: false
+    suffix: .html
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: qwerty
+    sql-script-encoding: UTF-8

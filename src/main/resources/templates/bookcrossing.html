@@ -1,0 +1,27 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Библиотека</title>
+</head>
+<body>
+<h1><a href="/">Библиотека</a></h1><hr>
+<h2>Выдача кнгиги</h2><hr>
+
+
+<form action="get" th:action="@{/get_book}" th:object="${bookcrossing}" method="post">
+    <table border="0" cellpadding="5">
+        <tr>
+            <td>Клиент: </td>
+            <td><input type="text" th:field="*{client.id}"/></td>
+        </tr>
+        <tr>
+            <td>Книга: </td>
+            <td><input type="text" th:field="*{book.id}"/></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Сохранить"></td>
+        </tr>
+
+    </table>
+</body>
+</html>
