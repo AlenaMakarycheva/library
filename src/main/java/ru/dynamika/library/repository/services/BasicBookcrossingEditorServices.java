@@ -20,5 +20,4 @@ public class BasicBookcrossingEditorServices {
         bookcrossing.setStartdate(Calendar.getInstance().getTime());
         bookcrossingRepository.save(bookcrossing);
     }
-
 }

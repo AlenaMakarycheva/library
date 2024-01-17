@@ -16,7 +16,6 @@ import java.util.List;
 public class BasicCatalogEditorServices {
 
     private final BookRepository bookRepository;
-
     public void save(Book book){
         bookRepository.save(book);
     }

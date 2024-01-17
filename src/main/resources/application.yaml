@@ -18,3 +18,5 @@ spring:
     username: postgres
     password: qwerty
     sql-script-encoding: UTF-8
+    initialization-mode: always
+    data: classpath:data-postgresql.sql
