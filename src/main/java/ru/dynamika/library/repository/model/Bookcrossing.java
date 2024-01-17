@@ -19,7 +19,7 @@ public class Bookcrossing {
 
     @Column (name = "start_date")
     @JsonFormat(pattern="yyyy-MM-dd hh:mm:ss")
-    private Date startdate;
+    private Date startDate;
 
     @OneToOne
     private Book book;

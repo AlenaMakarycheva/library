@@ -17,7 +17,7 @@ public class BasicBookcrossingEditorServices {
     private final BookcrossingRepository bookcrossingRepository;
 
     public void save(Bookcrossing bookcrossing){
-        bookcrossing.setStartdate(Calendar.getInstance().getTime());
+        bookcrossing.setStartDate(Calendar.getInstance().getTime());
         bookcrossingRepository.save(bookcrossing);
     }
 }
