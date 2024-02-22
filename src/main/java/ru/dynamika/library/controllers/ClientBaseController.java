@@ -1,13 +1,12 @@
-package ru.dynamika.library;
+package ru.dynamika.library.controllers;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import ru.dynamika.library.repository.model.Client;
-import ru.dynamika.library.repository.services.BasicClientBaseEditorServices;
-import ru.dynamika.library.repository.services.ClientBaseViewServices;
+import ru.dynamika.library.services.BasicClientBaseEditorServices;
+import ru.dynamika.library.services.ClientBaseViewServices;
 
 @Controller
 @RequiredArgsConstructor

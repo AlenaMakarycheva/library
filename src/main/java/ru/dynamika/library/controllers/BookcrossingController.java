@@ -1,4 +1,4 @@
-package ru.dynamika.library;
+package ru.dynamika.library.controllers;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import ru.dynamika.library.repository.model.Bookcrossing;
-import ru.dynamika.library.repository.services.BasicBookcrossingEditorServices;
+import ru.dynamika.library.services.BasicBookcrossingEditorServices;
 
 @Controller
 @RequiredArgsConstructor

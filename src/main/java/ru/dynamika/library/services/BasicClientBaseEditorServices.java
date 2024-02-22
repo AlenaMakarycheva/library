@@ -1,4 +1,4 @@
-package ru.dynamika.library.repository.services;
+package ru.dynamika.library.services;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -24,7 +24,6 @@ public class BasicClientBaseEditorServices {
     public void update(Client clientUp){
         if(!clientRepository.existsById(clientUp.getId())){new IllegalArgumentException("Нет клиента с ID " + clientUp.getId());}
         clientRepository.save(clientUp);
-
     }
 
     public void delete(long id){

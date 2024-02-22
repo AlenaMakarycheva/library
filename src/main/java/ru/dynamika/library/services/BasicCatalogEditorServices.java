@@ -1,4 +1,4 @@
-package ru.dynamika.library.repository.services;
+package ru.dynamika.library.services;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

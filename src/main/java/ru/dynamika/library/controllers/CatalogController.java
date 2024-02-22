@@ -1,12 +1,12 @@
-package ru.dynamika.library;
+package ru.dynamika.library.controllers;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import ru.dynamika.library.repository.model.Book;
-import ru.dynamika.library.repository.services.BasicCatalogEditorServices;
-import ru.dynamika.library.repository.services.CatalogViewServices;
+import ru.dynamika.library.services.BasicCatalogEditorServices;
+import ru.dynamika.library.services.CatalogViewServices;
 
 
 @Controller
